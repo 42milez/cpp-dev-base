@@ -1,8 +1,7 @@
 FROM ubuntu:18.04
 
-RUN apt update                            \
-	&& apt upgrade -y                     \
-	&& apt install -y                     \
+RUN apt-get update                        \
+    && apt-get install -y                 \
 	    apt-utils=1.6.12                  \
 	    build-essential=12.4ubuntu1       \
 	    clang=1:9-2~ubuntu18.04.2         \
