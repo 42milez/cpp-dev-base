@@ -14,7 +14,7 @@ RUN apt update                                \
 	&& apt clean -y                           \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN pip3 install --no-cache-dir --upgrade pip && pip3 install --no-cache-dir conan==1.22.2
+RUN python3 -m pip install --no-cache-dir --upgrade pip && python3 -m pip install --no-cache-dir conan==1.22.2
 
 # see: https://docs.docker.com/engine/examples/running_ssh_service/
 RUN mkdir /var/run/sshd
