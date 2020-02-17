@@ -1,7 +1,7 @@
 FROM ubuntu:18.04
 
-RUN apt-get update                        \
-    && apt-get install -y                 \
+RUN apt update                            \
+    && apt install -y                     \
 	    apt-utils=1.6.12                  \
 	    build-essential=12.4ubuntu1       \
 	    clang-9=1:9-2~ubuntu18.04.2       \
@@ -10,6 +10,7 @@ RUN apt-get update                        \
 	    gdbserver=8.1-0ubuntu3.2          \
 	    openssh-server=1:7.6p1-4ubuntu0.3 \
 	    rsync=3.1.2-2.1ubuntu1            \
+	&& apt clean -y                       \
 	&& rm -rf /var/lib/apt/lists/*
 
 # see: https://docs.docker.com/engine/examples/running_ssh_service/
