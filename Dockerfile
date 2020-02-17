@@ -4,7 +4,7 @@ RUN apt-get update                        \
     && apt-get install -y                 \
 	    apt-utils=1.6.12                  \
 	    build-essential=12.4ubuntu1       \
-	    clang=1:9-2~ubuntu18.04.2         \
+	    clang-9=1:9-2~ubuntu18.04.2       \
 	    cmake=3.10.2-1ubuntu2.18.04.1     \
 	    gdb=8.1-0ubuntu3.2                \
 	    gdbserver=8.1-0ubuntu3.2          \
