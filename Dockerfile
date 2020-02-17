@@ -30,4 +30,4 @@ EXPOSE 22 7777
 RUN useradd -ms /bin/bash dev
 RUN echo 'dev:dev' | chpasswd
 
-ENTRYPOINT [ "/usr/sbin/sshd", "-D" ]
+CMD [ "/usr/sbin/sshd", "-D" ]
