@@ -6,6 +6,7 @@ RUN apt update                                \
         build-essential=12.4ubuntu1           \
         clang-9=1:9-2~ubuntu18.04.2           \
         cmake=3.10.2-1ubuntu2.18.04.1         \
+        curl=7.58.0-2ubuntu3.8                \
         gdb=8.1-0ubuntu3.2                    \
         gdbserver=8.1-0ubuntu3.2              \
         git=1:2.17.1-1ubuntu0.5               \
