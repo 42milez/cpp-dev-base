@@ -16,7 +16,7 @@ RUN apt update                                \
     && apt clean -y                           \
     && rm -rf /var/lib/apt/lists/*
 
-RUN python3 -m pip install --no-cache-dir --upgrade pip && python3 -m pip install --no-cache-dir conan==1.22.2
+RUN python3 -m pip install --no-cache-dir --upgrade pip && python3 -m pip install --no-cache-dir conan==1.24.0
 
 ENV SAN_SYMBOLIZER_PATH /usr/bin/llvm-symbolizer-9
 
