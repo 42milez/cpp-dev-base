@@ -19,6 +19,9 @@ RUN apt update \
 
 RUN python3 -m pip install --no-cache-dir --upgrade pip && python3 -m pip install --no-cache-dir conan==1.24.0
 
+RUN echo 'kernel.perf_event_paranoid=-1' >> /etc/sysctl.d/99-perf.conf && \
+    echo 'kernel.kptr_restrict=0' >> /etc/sysctl.d/99-perf.conf
+
 ENV SAN_SYMBOLIZER_PATH /usr/bin/llvm-symbolizer-9
 
 CMD [ "/bin/bash" ]
